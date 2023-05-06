@@ -1,0 +1,308 @@
+/* Importing Poppins font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* The following foramattings are globally done */
+* {
+  margin: 0px;
+  font-family: 'Space Mono', monospace;
+  box-sizing: border-box;
+}
+
+:root {
+  --def_marg: 100px;
+  /* A variable for the default margin size is made */
+}
+
+p {
+  font-size: 18px;
+}
+
+li {
+  font-size: 18px;
+}
+
+h1 {
+  font-size: 28px;
+}
+
+h2 {
+  font-size: 25px;
+  text-decoration: underline dashed;
+}
+
+h3 {
+  font-size: 22px;
+}
+
+a {
+  color: #005aae;
+  transition: all 0.06s ease;
+}
+
+a:hover {
+  font-weight: bold;
+}
+
+h1 a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  color: #00407b;
+}
+
+a:visited {
+  color: #3692dd;
+}
+
+mark {
+  /* This is a special formatting done to apply ligh blue low highlight. */
+  display: inline-block;
+  line-height: 32px;
+  background: linear-gradient(to bottom,
+      transparent 55%,
+      #99d0fd 45%);
+}
+
+/* From here global formatting ends */
+
+.intro_banner img {
+  display: block;
+  width: 320px;
+  margin: 5px auto;
+}
+
+.nav_bar ul {
+  /* This bears all the properties of the elements in the navigation pane */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.nav_bar a {
+  display: block;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.nav_bar a:hover {
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #2477c4;
+}
+
+#current_nav {
+  color: #2477c4;
+}
+
+.nav_bar p {
+  text-align: center;
+}
+
+.intro h1 {
+  font-weight: 600;
+  text-align: center;
+  padding: 0px 5px;
+  margin: 25px var(--def_marg) 50px var(--def_marg);
+  letter-spacing: 2px;
+}
+
+.intro h2 {
+  text-decoration: none;
+  font-weight: 500;
+  margin: 25px var(--def_marg) 2px var(--def_marg);
+}
+
+.tool_case {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 5px 20px;
+  grid-gap: 15px;
+}
+
+.tool {
+  padding: 10px 0px;
+  margin: 20px 5px;
+  background-color: rgba(0, 158, 250, 0.05);
+  box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  color: black;
+  border-radius: 30px;
+  text-align: center;
+  font-size: 21px;
+  backdrop-filter: blur(20px);
+  transition: all 0.25s ease;
+}
+
+.tool p {
+  font-size: 19.5px;
+}
+
+.tool img {
+  width: 40%;
+}
+
+.tool:hover {
+  font-weight: normal;
+  background-color: rgba(0, 140, 255, 0.1);
+  backdrop-filter: blur(15px);
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.tool:visited,
+.tool:link {
+  text-decoration: none;
+  color: black;
+}
+
+.tool:active {
+  color: #0096df;
+}
+
+.example {
+  padding: 30px;
+  background-color: rgb(216, 216, 216);
+}
+
+.content {
+  margin: 10px var(--def_marg);
+}
+
+.content img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
+
+.content p {
+  text-align: justify;
+}
+
+.img-gallary {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 15px;
+}
+
+.img-block {
+  margin: 5px;
+  width: 180px;
+  background-color: rgba(0, 158, 250, 0.05);
+  box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  color: black;
+  border-radius: 30px;
+  text-align: center;
+  backdrop-filter: blur(20px);
+  transition: all 0.25s ease;
+}
+
+.img-block:hover {
+  background-color: rgba(0, 140, 255, 0.1);
+  backdrop-filter: blur(15px);
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.img-block img {
+  width: 100%;
+  height: auto;
+  border-radius: 30px;
+}
+
+.img-block a,
+.img-block a:hover,
+.img-block a:visited,
+.img-block a:active {
+  color: black;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+.img-desc {
+  padding: 15px;
+  text-align: center;
+}
+
+video {
+  display: block;
+  margin: 10px auto;
+  width: 75%;
+}
+
+audio {
+  display: block;
+  margin: 10px auto;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  background-color: #B6E8FF;
+  padding: 10px 0px;
+  font-size: 18px;
+}
+
+
+#left-footer {
+  margin-left: var(--def_marg);
+  text-align: left;
+}
+
+.social_media img {
+  display: inline-block;
+  width: 35px;
+  margin-top: 20px;
+  margin-right: 30px;
+}
+
+#right-footer {
+  margin-right: var(--def_marg);
+  text-align: right;
+}
+
+.contact-txt {
+  display: inline-block;
+}
+
+.contact-img {
+  display: inline-block;
+  vertical-align: middle;
+  width: 35px;
+}
+
+@media only screen and (max-width: 1024px) {
+  :root {
+    --def_marg: 50px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  :root {
+    --def_marg: 25px;
+  }
+
+  .intro_banner img {
+    width: 220px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  :root {
+    --def_marg: 10px;
+  }
+}
